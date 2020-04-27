@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package mongo;
+
+message PlayerMoveData
+{
+  string username = 1;
+  string uuid = 2;
+  int64 timestamp = 3;
+  repeated uint32 move_forward = 4;
+  repeated uint32 move_right = 5;
+  repeated int32 angle = 6;
+  repeated bool fireing = 7;
+}

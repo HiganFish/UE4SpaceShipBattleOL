@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package mongo;
+
+message SpawnEnemyData
+{
+  string username = 1;
+  string uuid = 2;
+  int64 timestamp = 3;
+  uint32 x = 4;
+  uint32 y = 5;
+  uint32 z = 6;
+  uint32 enemy_id = 7;
+}
